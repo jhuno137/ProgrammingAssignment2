@@ -3,13 +3,12 @@
 ##  1. makeCacheMatrix is a function "factory"
 ##  which creates "cacheable" matrix objects.
 ##
-##  2. cacheSolve retrieves the inverse from a 
+##  2. cacheSolve returns the inverse from a 
 ##  "cacheable" matrix object created through
-##  makecacheMatrix. The value of the inverse
-##  will come from cache if the matrix has already
-##  been computed, else the matrix inverse is
-##  calculated using the "solve" function from the
-##  base package.
+##  makecacheMatrix function. The value of the inverse
+##  will come from the cache if the matrix has already
+##  been computed or else the matrix inverse will be
+##  calculated and the result cached for later usage.
 ##
 ##  Usage:
 ##  > X <- matrix(c(1,3,0,2),2,2)
